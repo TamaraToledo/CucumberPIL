@@ -21,4 +21,4 @@ Feature: Home FarmaLider
         Given que un usuario está en la página de "Lider"
         When realiza scroll hasta "Suscribite a nuestro newsletter"
         Then selecciona la opción "Ofertas" se redirecciona a "https://farmaciaslider.com.ar/92-ofertas"
- 
+  

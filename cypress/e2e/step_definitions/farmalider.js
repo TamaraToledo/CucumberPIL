@@ -14,14 +14,6 @@ When(`posiciona el mouse sobre {string}`, (option) => {
     FarmaLider.getHeaderOptionMenu().contains(option).trigger('mouseover');
 });
 
-//Then(`se visualizan las opciones {string}`, (lista) => {
-  //  lista = lista.split(", ");
-   // FarmaLider.getHeaderSubOptionMenu().should("be.visible");
-    //lista.forEach((subOption) => {  
-    //    FarmaLider.getHeaderSubOptionMenu().find("a").should("contain.text", subOption);
-   // });
-//});
-
 Then(`selecciona la opción {string} se redirecciona a {string}`, (btnName, link) => {
     FarmaLider.getBtnIcon().contains(btnName).should("have.attr", "href", link);
 });
