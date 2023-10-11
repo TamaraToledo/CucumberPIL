@@ -1,1 +1,9 @@
 node_modules
+reports
+cypress/screenshots
+cucumber-json-formatter.exe
+cucumber-json-formatter-64.exe
+cypress/fixtures/intercept
+cypress.env.json
+cypress/ cypress-visual-screenshots/comparision
+cypress/ cypress-visual-screenshot/diff
