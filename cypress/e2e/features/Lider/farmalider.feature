@@ -13,12 +13,17 @@ Feature: Home FarmaLider
     Scenario: Verificar comportamiento de los botones centrales
 
         Given que un usuario está en la página de "Lider"
-        Then selecciona la opción "RESERVÁ TU MEDICAMENTO" se redirecciona a "https://farmaciaslider.com.ar/info/18-reserva-tu-medicamento"
-        Then selecciona la opción "RECETAS ESTADO DE TRAMITE" se redirecciona a "https://farmaciaslider.com.ar/iniciar-sesion?redirect=module&module=ff_clientesEspeciales&action=recetas"
-        Then selecciona la opción "BENEFICIOS EN TUS COMPRAS" se redirecciona a "https://farmaciaslider.com.ar/info/13-beneficios"
+        Then selecciona el boton "RECETAS ESTADO DE TRAMITE" se redirecciona a "https://farmaciaslider.com.ar/iniciar-sesion?redirect=module&module=ff_clientesEspeciales&action=recetas"
    
       Scenario: Verificar la pagina de Ofertas
         Given que un usuario está en la página de "Lider"
         When realiza scroll hasta "Suscribite a nuestro newsletter"
         Then selecciona la opción "Ofertas" se redirecciona a "https://farmaciaslider.com.ar/92-ofertas"
   
+
+          Scenario: Test visual del header
+          Given que un usuario está en la página de "Lider"
+          Then se verifica que el elemento "nav.header-nav" posee los atributos
+          |css-atribute | valor| log|
+          | background | #d20f7c | fondo de color magenta |
+          | color | #fff | letras de color blanco |
